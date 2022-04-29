@@ -1,0 +1,35 @@
+section {
+    background: #1919A52E 0% 0% no-repeat padding-box;
+    border-radius: 1em;
+    height: 100%;
+    margin: 1em;
+
+    display: flex;
+    align-items: center;
+}
+
+.description>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: left;
+    font: normal normal normal Arial;
+    font-size: 2em;
+    color: #1919A5B3;
+}
+
+.description>div>img {
+    width: 40%;
+    box-shadow: inset 3px 3px 6px #00000029, 3px 3px 6px #00000029;
+    border-radius: 1.5em;
+    margin: 1em;
+}
+
+.description>div>div>p {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-top: 1em;
+    width: 100%;
+}

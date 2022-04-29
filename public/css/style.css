@@ -28,7 +28,7 @@ body {
     margin: 1em;
 }
 
-form {
+form.login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,4 +85,99 @@ input {
         height: 7em;
         margin: 2em;
     }
+}
+
+.base-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+nav {
+    width: 20vw;
+    height: 100%;
+    background: transparent linear-gradient(180deg, #6B4FA1 0%, #1919A5 100%, #1919A5 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main {
+    width: 80vw;
+}
+
+nav > img {
+    width: 80%;
+    margin: 2em auto;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 2em;
+}
+
+li i{
+    font-size: 1.5em;
+}
+
+.button {
+    border: 1px solid #C1C1E1;
+    border-radius: 1em;
+    margin-left: 1.5em;
+    text-align: center;
+    letter-spacing: 0.7px;
+    color: #C1C1E1;
+    padding: 0.2em;
+    width: 60%;
+}
+
+ul {
+    list-style-type: none;
+    color: #C1C1E1;
+    font: normal normal normal  Segoe UI;
+    letter-spacing: 0px;
+    height: 100%;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding: 0;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.fa {
+    width: 1em;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1em 2em;
+    border-bottom: 1px solid gray;
+}
+
+.search-bar {
+    width: 70%;
+}
+
+.search-bar>form>input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 1.5em;
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 1em Segoe UI;
+    color: #1919A5;
+    margin: 0;
 }
