@@ -12,23 +12,23 @@
             <ul>
                 <li>
                     <i class="fa-solid fa-paw"></i>
-                    <a href="#" class="button">pet description</a>
+                    <a href="/description" class="button">pet description</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-droplet"></i>
-                    <a href="#" class="button">allergies</a>
+                    <a href="/allergies" class="button">allergies</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-syringe"></i>
-                    <a href="#" class="button">vaccinations</a>
+                    <a href="/vaccinations" class="button">vaccinations</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-bug"></i>
-                    <a href="#" class="button">dewormings</a>
+                    <a href="/dewormings" class="button">dewormings</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-pen-to-square"></i>
-                    <a href="#" class="button">edit profile</a>
+                    <a href="/edit" class="button">edit profile</a>
                 </li>
             </ul>
         </nav>

@@ -2,6 +2,10 @@
 
 require_once __DIR__.'/controllers/SecurityController.php';
 require_once __DIR__.'/controllers/DescriptionController.php';
+require_once __DIR__.'/controllers/AllergiesController.php';
+require_once __DIR__.'/controllers/VaccinationsController.php';
+require_once __DIR__.'/controllers/DewormingsController.php';
+require_once __DIR__.'/controllers/EditController.php';
 
 class Router {
 
