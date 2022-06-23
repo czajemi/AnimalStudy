@@ -11,6 +11,6 @@ Router::post('login', 'SecurityController');
 Router::get('allergies', 'AllergiesController');
 Router::get('vaccinations', 'VaccinationsController');
 Router::get('dewormings', 'DewormingsController');
-Router::get('edit', 'EditController');
+Router::post('edit', 'EditController');
 
 Router::run($path);

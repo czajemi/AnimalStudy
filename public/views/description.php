@@ -11,15 +11,15 @@
         <main>
             <?php include('search-bar.php') ?>
             <section class="description">
-                <div id="info">
-                    <img src="public/img/uploads/dog_img.jpg">
-                    <div>
-                        <h2>Name: Milan</h2>
-                        <p>Breed: Hungarian vizsla</p>
-                        <p>Owner name: Emilia Czaja</p>
-                        <p>Owner phone no.: 600 700 800</p>
+                    <div id="info">
+                        <img src="public/uploads/<?= $pet->getImage(); ?>">
+                        <div>
+                            <h2>Name: <?= $pet->getName(); ?></h2>
+                            <p>Breed: <?= $pet->getBreed(); ?></p>
+                            <p>Owner name: <?= $pet->getOwnerName(); ?></p>
+                            <p>Owner phone no.: <?= $pet->getOwnerPhone(); ?></p>
+                        </div>
                     </div>
-                </div>
             </section>
         </main>
         
