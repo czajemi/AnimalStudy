@@ -136,7 +136,7 @@ li i{
 ul {
     list-style-type: none;
     color: #C1C1E1;
-    font: normal normal normal  Segoe UI;
+    font: normal normal normal 1em Segoe UI;
     letter-spacing: 0px;
     height: 100%;
     width: calc(100% - 30px);
