@@ -39,4 +39,22 @@ class PetRepository extends Repository
             $pet->getImage()
         ]);
     }
+
+    public function getYourPet(): array
+    {
+        $result = [];
+        $stmt = $this->database->connect()->prepare('
+        SELECT * FROM pet
+        ');
+        $stmt->execute();
+        $pet = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($pet as $pet) {
+            $result[] = new Pet(
+                $pet['name'],
+                $pet['breed'],
+                $pet['image']
+            );
+        }
+        return $result;
+    }
 }

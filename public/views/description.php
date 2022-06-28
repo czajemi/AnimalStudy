@@ -11,6 +11,7 @@
         <main>
             <?php include('search-bar.php') ?>
             <section class="description">
+                    <?php foreach ($pet as $pet):?>
                     <div id="info">
                         <img src="public/uploads/<?= $pet->getImage(); ?>">
                         <div>
@@ -18,6 +19,7 @@
                             <p>Breed: <?= $pet->getBreed(); ?></p>
                         </div>
                     </div>
+                    <?php endforeach; ?>
             </section>
         </main>
         

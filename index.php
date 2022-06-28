@@ -6,7 +6,7 @@ $path= trim($_SERVER['REQUEST_URI'], '/');
 
 
 Router::get('', 'DescriptionController');
-Router::get('description', 'DescriptionController');
+Router::get('description', 'EditController');
 Router::post('login', 'SecurityController');
 Router::get('allergies', 'AllergiesController');
 Router::get('vaccinations', 'VaccinationsController');

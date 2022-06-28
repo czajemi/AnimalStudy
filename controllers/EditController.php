@@ -21,6 +21,11 @@ class EditController extends AppController{
 
     }
 
+    public function description() {
+        $pet=$this->petRepository->getYourPet();
+        return $this->render('description', ['pet' => $pet]);
+    }
+
     public function edit()
     {
         if ($this->isPost() && is_uploaded_file($_FILES['file']['tmp_name']) && $this->validate($_FILES['file'])) {
