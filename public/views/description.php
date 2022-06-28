@@ -16,8 +16,6 @@
                         <div>
                             <h2>Name: <?= $pet->getName(); ?></h2>
                             <p>Breed: <?= $pet->getBreed(); ?></p>
-                            <p>Owner name: <?= $pet->getOwnerName(); ?></p>
-                            <p>Owner phone no.: <?= $pet->getOwnerPhone(); ?></p>
                         </div>
                     </div>
             </section>

@@ -25,8 +25,6 @@
                 </div>
                 <input name="name" type="text" placeholder="Name">
                 <input name="breed" type="text" placeholder="Breed">
-                <input name="ownerName" type="text" placeholder="Owner name">
-                <input name="ownerPhone" type="text" placeholder="Owner phone no.">
 
                 <input type="file" name="file"/><br/>
                 <button type="submit">send</button>

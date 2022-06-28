@@ -3,6 +3,7 @@
 require_once 'AppController.php';
 require_once __DIR__.'/../models/Pet.php';
 require_once __DIR__.'/../repository/UserRepository.php';
+require_once __DIR__.'/../repository/PetRepository.php';
 
 class EditController extends AppController{
 
@@ -11,6 +12,14 @@ class EditController extends AppController{
     const UPLOAD_DIRECTORY = '/public/uploads/';
 
     private $message=[];
+    private $petRepository;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->petRepository = new PetRepository();
+
+    }
 
     public function edit()
     {
@@ -21,7 +30,8 @@ class EditController extends AppController{
             );
 
             // TODO create new project object and save it in database
-            $pet = new Pet($_POST['name'], $_POST['breed'], $_POST['ownerName'], $_POST['ownerPhone'], $_FILES['file']['name']);
+            $pet = new Pet($_POST['name'], $_POST['breed'], $_FILES['file']['name']);
+            $this->petRepository->addPet($pet);
 
             return $this->render('description', ['message' => $this->message, 'pet'=>$pet]);
         }
