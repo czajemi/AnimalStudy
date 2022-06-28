@@ -30,8 +30,7 @@ class PetRepository extends Repository
     public function addPet(Pet $pet): void
     {
         $stmt = $this->database->connect()->prepare('
-        INSERT INTO pet (name, breed, image)
-        VALUES (?, ?, ?)
+        SELECT function_addPet(?, ?, ?)
         ');
         $stmt ->execute([
             $pet->getName(),
@@ -44,7 +43,7 @@ class PetRepository extends Repository
     {
         $result = [];
         $stmt = $this->database->connect()->prepare('
-        SELECT * FROM pet
+        SELECT * FROM view_pet
         ');
         $stmt->execute();
         $pet = $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -34,7 +34,6 @@ class EditController extends AppController{
                 dirname(__DIR__).self::UPLOAD_DIRECTORY.$_FILES['file']['name']
             );
 
-            // TODO create new project object and save it in database
             $pet = new Pet($_POST['name'], $_POST['breed'], $_FILES['file']['name']);
             $this->petRepository->addPet($pet);
 
