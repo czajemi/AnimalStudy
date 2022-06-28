@@ -12,5 +12,6 @@ Router::get('allergies', 'AllergiesController');
 Router::get('vaccinations', 'VaccinationsController');
 Router::get('dewormings', 'DewormingsController');
 Router::post('edit', 'EditController');
+Router::post('register', 'RegisterController');
 
 Router::run($path);

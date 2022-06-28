@@ -28,19 +28,23 @@ body {
     margin: 1em;
 }
 
-form.login {
+form.login, form.register {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 40vh;
+    height: 100%;
 
     background: #FFFFFFE0 0% 0% no-repeat padding-box;
     box-shadow: inset 6px 6px 6px #00000029, 6px 6px 6px #00000029;
     border: 1px solid #707070;
     border-radius: 29px;
     opacity: 0.88;
+}
+
+form.register {
+    height: fit-content;
 }
 
 button {
@@ -180,4 +184,11 @@ header {
     font: normal normal normal 1em Segoe UI;
     color: #1919A5;
     margin: 0;
+}
+
+.no-valid {
+    border: 3px solid red;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
 }
